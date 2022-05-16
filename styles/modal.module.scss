@@ -1,0 +1,46 @@
+.modal_container {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+    top: 0;
+    padding: 20px;
+
+    .close_modal {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        cursor: pointer;
+
+    }
+
+    .modal {
+        width: 30%;
+        height: 400px;
+        background-color: #fff;
+        border-radius: 8px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .modal_content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+
+        .captain {
+            background-color: #333;
+            color: #fff
+        }
+    }
+}

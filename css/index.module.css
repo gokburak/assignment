@@ -1,0 +1,33 @@
+.container {
+  display: -ms-grid;
+  display: grid;
+  height: 100vh;
+  width: 100vw;
+  margin-top: 20px;
+  gap: 50px;
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
+  -ms-grid-rows: 200px 200px 200px 200px;
+      grid-template-rows: 200px 200px 200px 200px;
+}
+
+.container .card {
+  width: 200px;
+  height: 200px;
+  border: 1px solid rgba(240, 227, 227, 0.815);
+  text-align: center;
+  margin: 0 auto;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+          box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  border-radius: 5px;
+}
+
+.container .card:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+/*# sourceMappingURL=index.module.css.map */
