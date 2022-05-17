@@ -20,7 +20,6 @@
 
 
 
-
   .card {
     width: 200px;
     height: 220px;
@@ -32,6 +31,7 @@
     border-radius: 5px;
     padding: 10px;
     font-size: 13px;
+    color: rgb(50, 106, 204);
 
     .captain {
       background-color: black;
@@ -91,10 +91,5 @@
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: 250px;
   }
-
-  // @media (min-width:1281px) {
-  //   grid-template-columns: repeat(5, 1fr);
-  //   grid-template-rows: 250px;
-  // }
 
 }
