@@ -4,12 +4,22 @@
 
 .container {
   display: grid;
-  height: 100vh;
+  height: 100%;
   width: 100vw;
-  margin-top: 20px;
+  padding-top: 20px;
   gap: 50px;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: 200px 200px 200px 200px;
+  background-image: url(https://browsecat.net/sites/default/files/ac-milan-wallpapers-53229-335229-8564419.png);
+  // background-image: url("AC-Milan-logo-1995.png");
+  background-repeat: no-repeat;
+  // background-size: 500px;
+  background-size: cover;
+  background-position: center;
+
+
+
+
 
   .card {
     width: 200px;
@@ -32,8 +42,8 @@
 
     img {
       border-radius: 8px;
+      // width: 30%;
     }
-
 
     &:hover {
       // box-shadow: 10px 10px 10px rgba(0,0,0,0.5);
@@ -42,5 +52,39 @@
 
     }
   }
+
+  // Responsive Grid kısmı
+
+
+
+  @media (min-width:220px) {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 250px;
+  }
+
+  @media (min-width:480px) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 250px;
+  }
+
+  @media (min-width:702px) {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 250px;
+  }
+
+  @media (min-width:946px) {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 250px;
+  }
+
+  @media (min-width:1205px) {
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 250px;
+  }
+
+  // @media (min-width:1281px) {
+  //   grid-template-columns: repeat(5, 1fr);
+  //   grid-template-rows: 250px;
+  // }
 
 }

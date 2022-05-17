@@ -4,6 +4,7 @@ import styles from '../styles/index.module.scss';
 import { useState } from 'react';
 import Modal from '../components/modal';
 
+
 const index = ({ data }) => {
     const [player, setPlayer] = useState(null);
     const [modal, setModal] = useState(false);
@@ -18,11 +19,10 @@ const index = ({ data }) => {
                 )}
             </div>
             {modal && <Modal player={player} setModal={setModal} />}
-
-
         </>
     )
 }
+
 export async function getStaticProps() {
     const url = 'https://transfermarket.p.rapidapi.com/clubs/get-squad?id=46';
     const options = {

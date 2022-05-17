@@ -16,12 +16,13 @@ const Modal = ({ setModal, player }) => {
                 <div className={styles.modal_content}>
                     <img src={player.image} alt="logo" />
                     <div >
-                        <h4>{player.name}</h4>
+                        <h4>Name:{player.name}</h4>
                         <h4> Age: {player.age}</h4>
-                        <h4>{player.nationalities[0].name}</h4>
+                        <h4>Country: {player.nationalities[0].name}</h4>
                         <h4 className={styles.captain} >{player.captain ? "Captain" : null}</h4>
-                        <h4>{player.positions.first.name}</h4>
-                        <h4>  {player.marketValue.currency} {player.marketValue.value}  </h4>
+                        <h4>Positions: {player.positions.first.name}</h4>
+                        <h4>ShirtNumber: {player.shirtNumber}</h4>
+                        <h4> Market Value: {player.marketValue.currency} {player.marketValue.value}  </h4>
 
                     </div>
                 </div>
