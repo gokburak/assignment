@@ -60,11 +60,20 @@
   @media (min-width:220px) {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: 250px;
+    // background-image: none;
+  }
+
+  @media (max-width:480px) {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 250px;
+    background-image: none;
+
   }
 
   @media (min-width:480px) {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 250px;
+
   }
 
   @media (min-width:702px) {
@@ -75,6 +84,7 @@
   @media (min-width:946px) {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 250px;
+
   }
 
   @media (min-width:1205px) {
